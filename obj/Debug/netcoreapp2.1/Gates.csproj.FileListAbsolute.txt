@@ -1,0 +1,11 @@
+C:\Users\kcsato\source\repos\Maandag\bin\Debug\netcoreapp2.1\Gates.deps.json
+C:\Users\kcsato\source\repos\Maandag\bin\Debug\netcoreapp2.1\Gates.runtimeconfig.json
+C:\Users\kcsato\source\repos\Maandag\bin\Debug\netcoreapp2.1\Gates.runtimeconfig.dev.json
+C:\Users\kcsato\source\repos\Maandag\bin\Debug\netcoreapp2.1\Gates.dll
+C:\Users\kcsato\source\repos\Maandag\bin\Debug\netcoreapp2.1\Gates.pdb
+C:\Users\kcsato\source\repos\Maandag\obj\Debug\netcoreapp2.1\Gates.csprojAssemblyReference.cache
+C:\Users\kcsato\source\repos\Maandag\obj\Debug\netcoreapp2.1\Gates.csproj.CoreCompileInputs.cache
+C:\Users\kcsato\source\repos\Maandag\obj\Debug\netcoreapp2.1\Gates.AssemblyInfoInputs.cache
+C:\Users\kcsato\source\repos\Maandag\obj\Debug\netcoreapp2.1\Gates.AssemblyInfo.cs
+C:\Users\kcsato\source\repos\Maandag\obj\Debug\netcoreapp2.1\Gates.dll
+C:\Users\kcsato\source\repos\Maandag\obj\Debug\netcoreapp2.1\Gates.pdb
