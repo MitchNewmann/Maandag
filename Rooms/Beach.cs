@@ -13,6 +13,9 @@ namespace Gates.Rooms
 
             Console.Clear();
 
+            Console.WriteLine("You are on the beach, resting. You get 3 extra life points.\n" +
+                "Press 6 to go to the desert\nPress 7 to go to the Cave");
+
             switch (Run.input)
             {
                 case (int)RoomList.Rooms.desert:

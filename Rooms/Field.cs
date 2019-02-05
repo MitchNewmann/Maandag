@@ -10,7 +10,8 @@ namespace Gates.Rooms
         public static void LoadField()
         {
             Console.Clear();
-            Console.WriteLine("You are on a field\nPlease choose which way to go!\n1.Mountain\n2.Forest");
+            Console.WriteLine("You are on a field\nPlease choose which way to go!" +
+                "\nPress 3 to go to the mountain\n Press 2 to go to the forest");
 
             switch (Run.input)
             {
