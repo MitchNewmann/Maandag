@@ -34,6 +34,13 @@ namespace Gates.Rooms
             Console.WriteLine("You are in the forest. Conditions are unfavorable.\n" +
                               "You've lost {0} life points.\nPlease choose which way to go!\n1.Desert\n2.Town", Run.pointsLost);
 
-        }
+			if (Run._numLife < 3)
+			{
+				Console.WriteLine("You've found a magical plant that's given to You one extra life.");
+				Run._numLife = Run._numLife + 1;
+			}
+
+		}
+
     }
 }

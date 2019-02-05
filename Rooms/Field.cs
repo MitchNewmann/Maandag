@@ -27,13 +27,6 @@ namespace Gates.Rooms
 
             Run._lifePoints = Run._lifePoints - 2;
 
-            if (Run._numLife < 3)
-            {
-                Console.WriteLine("You've found a magical plant that's given to You one extra life.");
-                Run._numLife = Run._numLife + 1;
-            }
-
-
         }
     }
 }

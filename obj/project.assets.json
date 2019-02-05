@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kcsato\\.nuget\\packages\\": {},
+    "C:\\Users\\aerdas\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kcsato\\source\\repos\\Maandag\\Gates.csproj",
+      "projectUniqueName": "D:\\Users\\aerdas\\Documents\\Git\\SE-Track\\Krisztian\\Maandag\\Gates.csproj",
       "projectName": "Gates",
-      "projectPath": "C:\\Users\\kcsato\\source\\repos\\Maandag\\Gates.csproj",
-      "packagesPath": "C:\\Users\\kcsato\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kcsato\\source\\repos\\Maandag\\obj\\",
+      "projectPath": "D:\\Users\\aerdas\\Documents\\Git\\SE-Track\\Krisztian\\Maandag\\Gates.csproj",
+      "packagesPath": "C:\\Users\\aerdas\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\aerdas\\Documents\\Git\\SE-Track\\Krisztian\\Maandag\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\kcsato\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aerdas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

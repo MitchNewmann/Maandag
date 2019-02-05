@@ -9,3 +9,14 @@ C:\Users\kcsato\source\repos\Maandag\obj\Debug\netcoreapp2.1\Gates.AssemblyInfoI
 C:\Users\kcsato\source\repos\Maandag\obj\Debug\netcoreapp2.1\Gates.AssemblyInfo.cs
 C:\Users\kcsato\source\repos\Maandag\obj\Debug\netcoreapp2.1\Gates.dll
 C:\Users\kcsato\source\repos\Maandag\obj\Debug\netcoreapp2.1\Gates.pdb
+D:\Users\aerdas\Documents\Git\SE-Track\Krisztian\Maandag\obj\Debug\netcoreapp2.1\Gates.csprojAssemblyReference.cache
+D:\Users\aerdas\Documents\Git\SE-Track\Krisztian\Maandag\obj\Debug\netcoreapp2.1\Gates.csproj.CoreCompileInputs.cache
+D:\Users\aerdas\Documents\Git\SE-Track\Krisztian\Maandag\obj\Debug\netcoreapp2.1\Gates.AssemblyInfoInputs.cache
+D:\Users\aerdas\Documents\Git\SE-Track\Krisztian\Maandag\obj\Debug\netcoreapp2.1\Gates.AssemblyInfo.cs
+D:\Users\aerdas\Documents\Git\SE-Track\Krisztian\Maandag\obj\Debug\netcoreapp2.1\Gates.dll
+D:\Users\aerdas\Documents\Git\SE-Track\Krisztian\Maandag\obj\Debug\netcoreapp2.1\Gates.pdb
+D:\Users\aerdas\Documents\Git\SE-Track\Krisztian\Maandag\bin\Debug\netcoreapp2.1\Gates.deps.json
+D:\Users\aerdas\Documents\Git\SE-Track\Krisztian\Maandag\bin\Debug\netcoreapp2.1\Gates.runtimeconfig.json
+D:\Users\aerdas\Documents\Git\SE-Track\Krisztian\Maandag\bin\Debug\netcoreapp2.1\Gates.runtimeconfig.dev.json
+D:\Users\aerdas\Documents\Git\SE-Track\Krisztian\Maandag\bin\Debug\netcoreapp2.1\Gates.dll
+D:\Users\aerdas\Documents\Git\SE-Track\Krisztian\Maandag\bin\Debug\netcoreapp2.1\Gates.pdb

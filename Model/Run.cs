@@ -12,7 +12,7 @@ namespace Gates.Model
         static string _finalMessage = "";
         public static int input;
 
-        public static void RunGame(RoomList.Rooms room)
+        public static void RunGame()
         {
             Console.Clear();
 
@@ -78,7 +78,7 @@ namespace Gates.Model
 
                     if (ChoiceGeneric.makeChoice(yesOrNo) == 1)
                     {
-                        RunGame(room);
+                        RunGame();
                     }
 
                 }
