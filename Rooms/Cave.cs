@@ -14,6 +14,18 @@ namespace Gates.Rooms
 
             Console.Clear();
 
+            switch (Run.input)
+            {
+                case (int)RoomList.Rooms.beach:
+                    Beach.LoadBeach();
+                    break;
+                case (int)RoomList.Rooms.desert:
+                    Desert.LoadDesert();
+                    break;
+                default:
+                    InvalidInput.invalidInput();
+                    break;
+            }
 
         }
     }
