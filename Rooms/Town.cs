@@ -4,13 +4,11 @@ using System.Text;
 
 namespace Gates.Rooms
 {
-    class Mountain
+    class Town
     {
-        public static void loadMountain()
+        public static void loadTown()
         {
             Console.Clear();
-
-
         }
     }
 }

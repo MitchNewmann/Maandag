@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Gates.Rooms
 {
-    class Mountain
+    class Next
     {
-        public static void loadMountain()
+        public static void loadNext()
         {
             Console.Clear();
 

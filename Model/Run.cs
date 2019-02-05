@@ -1,95 +1,175 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Contracts;
-using System.Text;
+using Gates.Rooms;
 
 namespace Gates.Model
 {
     class Run
     {
-        static int numLife = 1;
-        static int lifePoints = 5;
-        static int room = 1;
-        static string finalMessage = "";
+        static int _numLife = 1;
+        static int _lifePoints = 5;
+        public static int _room = 1;
+        public static Random pointsLost = new Random(1-5);
+        static string _finalMessage = "";
+        public static int input;
 
-        public static void runGame()
+        public static void RunGame(RoomList.Rooms room)
         {
             Console.Clear();
 
-            while (room!=8 || lifePoints > 0)
+            Field.loadField();
+
+            input = ChoiceGeneric.makeChoice(Console.ReadLine());
+
+            while (_room!=8 || _lifePoints > 0)
             {
-                switch (room)
+                if (Console.ReadLine().ToLower() == "quit")
                 {
-                    case 1:
-                        Console.WriteLine("You are on a field\nPlease choose which way to go!\n1.Mountain\n2.Forest");
-                        
-                        if (Model.ChoiceGeneric.makeChoice(Console.ReadLine()) == 1)
-                        {
-                            room = 3;
-                        }
-                        else if (Model.ChoiceGeneric.makeChoice(Console.ReadLine()) == 2)
-                        {
-                            room = 2;
-                        }
-                        else
-                        {
-                            Console.WriteLine("Your choice is invalide.\nMake a valide choice!");
-                            Console.WriteLine();
-                        };
-
-                        break;
-                    case 2:
-                        Console.WriteLine("You are in the forest. Conditions are unfavorable.\n" +
-                                          "You've lost 2 life points.\nPlease choose which way to go!\n1.Desert\n2.Town");
-
-                        while (room != 6 || room != 5)
-                        {
-                            if (Model.ChoiceGeneric.makeChoice(Console.ReadLine()) == 1)
-                            {
-                                room = 6;
-                            }
-                            else if (Model.ChoiceGeneric.makeChoice(Console.ReadLine()) == 2)
-                            {
-                                room = 5;
-                            }
-                            else if(Console.ReadLine().ToLower() == "quit")
-                            {
-
-                            }
-                            else
-                            {
-                                Console.WriteLine("Your choice is invalide.\nMake a valide choice!");
-                            }
-                        }
-
-                        ;
-
-                        lifePoints = lifePoints - 2;
-
-                        if (numLife < 3)
-                        {
-                            Console.WriteLine("You've found a magical plant that's given to You one extra life.");
-                            numLife = numLife + 1;
-                        }
-                        break;
+                    break;
                 }
 
-                if (lifePoints < 1)
+                //#1 Field
+                if (_room == (int)RoomList.Rooms.field)
                 {
-                    finalMessage = "You've died.\nWanna try again?\nIf yes, press '1'!";
-                    Console.WriteLine(finalMessage);
+                    
+
+                    continue;
+                }
+
+                //#2 Forest
+                if (_room == (int)RoomList.Rooms.forest)
+                {
+                    if (input == (int)RoomList.Rooms.field)
+                    {
+                        Field.loadField();
+                    }
+                    else if (input == (int)RoomList.Rooms.desert)
+                    {
+                        Desert.loadDesert();
+                    }
+                    else if (input == (int)RoomList.Rooms.town)
+                    {
+                        Town.loadTown();
+                    }
+                    else
+                    {
+                        Model.InvalidInput.invalidInput();
+                    }
+
+                    continue;
+                }
+
+                //#3 Mountain
+                if (_room == (int)RoomList.Rooms.mountain)
+                {
+                    if (input == (int)RoomList.Rooms.field)
+                    {
+                        Field.loadField();
+                    }
+                    else if (input == (int)RoomList.Rooms.beach)
+                    {
+                        Beach.loadBeach();
+                    }
+                    else
+                    {
+                        Model.InvalidInput.invalidInput();
+                    }
+
+                    continue;
+                }
+
+                //#4 Beach
+                if (_room == (int)RoomList.Rooms.beach)
+                {
+                    if (input == (int)RoomList.Rooms.desert)
+                    {
+                        Desert.loadDesert();
+                    }
+                    else if (input == (int)RoomList.Rooms.cave)
+                    {
+                        Cave.loadCave();
+                    }
+                    else
+                    {
+                        Model.InvalidInput.invalidInput();
+                    }
+
+                    continue;
+                }
+
+                //#5 Town
+                if (_room == (int)RoomList.Rooms.town)
+                {
+                    if (input == (int)RoomList.Rooms.desert)
+                    {
+                        Desert.loadDesert();
+                    }
+                    else if (input == (int)RoomList.Rooms.forest)
+                    {
+                        Forest.loadForest();
+                    }
+                    else
+                    {
+                        Model.InvalidInput.invalidInput();
+                    }
+
+                    continue;
+                }
+
+                //#6 Desert
+                if (_room == (int)RoomList.Rooms.desert)
+                {
+                    if (input == (int)RoomList.Rooms.town)
+                    {
+                        Town.loadTown();
+                    }
+                    else if (input == (int)RoomList.Rooms.beach)
+                    {
+                        Beach.loadBeach();
+                    }
+                    else if (input == (int)RoomList.Rooms.cave)
+                    {
+                        Cave.loadCave();
+                    }
+                    else
+                    {
+                        Model.InvalidInput.invalidInput();
+                    }
+
+                    continue;
+                }
+
+                //#7 Cave
+                if (_room == (int)RoomList.Rooms.cave)
+                {
+                    
+                }
+
+
+                        _lifePoints = _lifePoints - 2;
+
+                        if (_numLife < 3)
+                        {
+                            Console.WriteLine("You've found a magical plant that's given to You one extra life.");
+                            _numLife = _numLife + 1;
+                        }
+                        break;
+
+                if (_lifePoints < 1)
+                {
+                    _finalMessage = "You've died.\nWanna try again?\nIf yes, press '1'!";
+                    Console.WriteLine(_finalMessage);
                     string yesOrNo = Console.ReadLine();
 
                     if (ChoiceGeneric.makeChoice(yesOrNo) == 1)
                     {
-                        runGame();
+                        RunGame(room);
                     }
 
                 }
 
-                if (room == 8)
+                if (_room == 8)
                 {
-                    Console.WriteLine(finalMessage = "You've successfully completed the first round");
+                    Console.WriteLine(_finalMessage = "You've successfully completed the first round");
                 }
 
             }
